@@ -8,6 +8,7 @@ int main(void)
 	int number_left; /*Decarling statement*/
 	int number_right;
 	/*for 0-9 with ASCII*/
+
 	for (number_left = 48; number_left <= 57; number_left++)
 	{
 		for (number_right = 48; number_right <= 57; number_right++)
