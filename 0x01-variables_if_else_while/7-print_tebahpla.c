@@ -7,6 +7,7 @@ int main(void)
 {
 	char letter; /*Decarling statement*/
 	/*for z-a*/
+
 	for (letter = 122 ; letter >= 97; letter--)
 	{
 		putchar(letter);
