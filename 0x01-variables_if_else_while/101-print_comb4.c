@@ -9,6 +9,7 @@ int main(void)
 	int right;
 	int center;
 	/*for 0-9 with ASCII*/
+
 	for (left = 48; left <= 57; left++)
 	{
 		for (center = left + 1; center <= 57; center++)
