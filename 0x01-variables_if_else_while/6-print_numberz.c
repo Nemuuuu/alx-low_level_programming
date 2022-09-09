@@ -7,6 +7,7 @@ int main(void)
 {
 	int i; /*Decarling statement*/
 	/*for count 0-9 with format ASCII*/
+
 	for (i = 48 ; i <= 57; i++)
 	{
 		putchar (i); /*print i*/
