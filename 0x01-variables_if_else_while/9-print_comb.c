@@ -7,6 +7,7 @@ int main(void)
 {
 	int number; /*Decarling statement*/
 	/*for 0-9 with (,)*/
+
 	for (number = 48; number <= 57; number++)
 	{
 		putchar(number); /*print  number*/
