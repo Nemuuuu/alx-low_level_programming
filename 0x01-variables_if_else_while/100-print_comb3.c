@@ -14,15 +14,16 @@ for (left = 0; left < 9; left++)
 	{
 		putchar('0' + left); /*print  number*/   
 		putchar('0' + right);
-			if (left < 8)
-		          {
-			       putchar(','); /*print (,)*/   
-			       putchar(' '); /*print a space*/   
-	                  }
-	        }
-     }
-      putchar ('\n');/*new line*/ 
+		
+		if (left < 8)
+		{
+			putchar(','); /*print (,)*/
+			putchar(' '); /*print a space*/
+		}
+	}
+}
+putchar ('\n');/*new line*/ 
 
-      return (0); 
- }
+return (0);
+}
 
