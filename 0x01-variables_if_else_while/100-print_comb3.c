@@ -5,24 +5,22 @@
  */
 int main(void)
 {
-	int number_left; /*Decarling statement*/
-	int number_right;
-	
-
-	for (number_left = 0;number_left <9; number_left++)
+int left;
+int right;
+for(left=0;left<9;left++)
+{
+	for (right=left+1;right<=9;right++)
 	{
-		for (number_right = number_left+1; number_right <= 9; number_right++)
+		putchar('0'+left);
+		putchar('0'+right);
+		if(left<8)
 		{
-			putchar(number_left); /*print  number*/
-			putchar (number_right);
-			/*break program if the condition is true (if is 89)*/
-			if (number_left<8)
-	{
-			putchar(','); /*print (,)*/
-			putchar (' '); /*print a space*/
-			}
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	putchar('\n'); /*new line*/
-	return (0);
 }
+putchar('\n');
+rerun (0);
+}
+
