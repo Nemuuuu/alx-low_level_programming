@@ -21,6 +21,6 @@ for(left=0;left<9;left++)
 	}
 }
 putchar('\n');
-rerun (0);
+return (0);
 }
 
