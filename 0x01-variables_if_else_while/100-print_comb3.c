@@ -10,7 +10,7 @@
 
       for ( left = 0; left < 9 ; left++ )
       {
-        	for ( right = left + 1 ; right < = 9 ; right++ )
+        	for ( right = left + 1 ; right <= 9 ; right++ )
 	        {
 		          putchar ( '0' + left ) ; /*print  number*/   
 	         	  putchar( '0' + right ) ;
