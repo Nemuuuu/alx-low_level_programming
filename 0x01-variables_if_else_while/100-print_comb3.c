@@ -21,7 +21,7 @@ for (left = 0; left < 9; left++)
 		}
 	}
 }
-putchar('\n');/*new line*/ 
+putchar('\n'); /*new line*/ 
 return (0);
 }
 
