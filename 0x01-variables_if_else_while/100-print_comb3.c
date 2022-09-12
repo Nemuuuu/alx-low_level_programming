@@ -12,9 +12,8 @@ for (left = 0; left < 9; left++)
 {
 	for (right = left + 1; right <= 9; right++)
 	{
-		putchar('0' + left); /*print  number*/   
+		putchar('0' + left); /*print  number*/
 		putchar('0' + right);
-		
 		if (left < 8)
 		{
 			putchar(','); /*print (,)*/
@@ -23,7 +22,6 @@ for (left = 0; left < 9; left++)
 	}
 }
 putchar ('\n');/*new line*/ 
-
 return (0);
 }
 
