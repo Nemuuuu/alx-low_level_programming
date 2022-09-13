@@ -1,56 +1,50 @@
 #include "main.h"
 
 /**
- * print_times_table  -prints tables
+ * print_times_table - Print the `n` times table, starting with 0.
  *
- * @n: print int
+ * Description: If `n` is greater than 15 or less than 0, print nothing.
  *
- * Return: nothing
+ * @n: int type number
  */
 void print_times_table(int n)
 {
-	int a, b, c; /*Declaring statements*/
+	int x = 0, y, z;
 
-	if (n < 16 && n > -1)
+	if (n > 15 || n < 0)
+		return;
+	while (x <= n)
 	{
-		for (a = 0; a <= n; a++)/*First for*/
+		for (y = 0; y <= n; y++)
 		{
-			for (b = 0; b <= n; b++)/*Secondo for*/
+			z = x * y;
+			if (z > 99)
 			{
-				c = a * b;/* multiplication a*b*/
-				if ((c / 10) == 0)/*If the first digit is 0*/
-				{
-					if  (b == 0)
-					{
-						_putchar ('0');
-					}
-					if (b != 0)/*print if b is different 0*/
-					{
-						_putchar (' ');
-						_putchar (' ');
-						_putchar ((c % 10) + '0');
-					}
-				} /*End the first IF*/
-				else if ((c / 10) <= 9 && ((c % 10) <= 9))/*print to 99*/
-				{
-					_putchar (' ');
-					_putchar ((c / 10) + '0');
-					_putchar ((c % 10) + '0');
-				} /*End ELSE IF*/
-				else/*print from 100*/
-				{
-					_putchar ((c / 100) + '0');
-					_putchar (((c / 10) % 10)  + '0');
-					_putchar ((c % 10) + '0');
-				} /*End ELSE*/
-				if (b < n) /*don't print the last (;)*/
-				{
-					_putchar(',');
-					_putchar (' ');
-				}
-			} /*End second FOR*/
-			_putchar ('\n');
-		} /*End first FOR*/
+				_putchar(z / 100 + '0');
+				_putchar((z / 10 % 10) + '0');
+				_putchar(z % 10 + '0');
+			}
+			else if (z > 9)
+			{
+				_putchar(' ');
+				_putchar(z / 10 + '0');
+				_putchar(z % 10 + '0');
+			}
+			else if (y != 0)
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(z + '0');
+			}
+			else
+				_putchar(z + '0');
+			if (y != n)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+		_putchar('\n');
+		x++;
 	}
-} /*End int main*/
-
+}
