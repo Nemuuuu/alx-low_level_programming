@@ -36,10 +36,9 @@ int main(void)
 			printf("%lu", a);
 		}
 		if (count != 97)
-		{
 			printf(", ");
 		}
 		printf("\n");
 		return (0);
-	}
+}
 
