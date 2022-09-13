@@ -1,41 +1,45 @@
 #include <stdio.h>
 
-#define Z 1000000000
+#define LARGEST 10000000000
 
 /**
- * main - increasing and decreasing until 98
+ * main - main block
  *
- * Return: Always 0.
+ * Description: Find and print the first 98 fib numbers starting with 1 and 2.
+ *
+ * Numbers should be coma and space separated.
+ *
+ * Return: 0
  */
 int main(void)
 {
-	unsigned long int a, a1, a2, b, b1, b2, r, r1, r2, i;
-
-	a = 1;
-	b = 2;
-	r = a + b;
-	printf("%lu, %lu,", a, b);
-	for (i = 0; i < 86; i++)
+	unsigned long int x = 0, y = 1, z = 0, a = 2;
+	unsigned long int b, c, k;
+	int count;
+	
+	printf("%lu, %lu, ",y, a);
+	for (count = 2; count < 98; count++)
 	{
-		printf("%lu", r);
-		a = b;
-		b = r;
-		r = a + b;
+		if (y + a > LARGEST || z > 0 || x > 0)
+		{
+			b = (y + a) / LARGEST;
+			c = (y + a) % LARGEST;
+			k = x + z + b;
+			x = z, z = k;
+			y = a, a = c;
+			printf("%lu%010lu", z, a);
+		}
+		else
+		{
+			c = y + a;
+			y = a, a = c;
+			printf("%lu", a);
+		}
+		if (count != 97)
+		{
+			printf(", ");
+		}
+		printf("\n");
+		return (0);
 	}
-	b1 = b / Z;
-	b2 = b % Z;
-	r1 = r / Z;
-	r2 = r % Z;
-	for (i = 0; i < 9; i++)
-	{
-		printf("%lu%lu,", r1, r2);
-		a1 = b1;
-		a2 = b2;
-		b1 = r1;
-		b2 = r2;
-		r1 = a1 + b1 + (a2 + b2) / Z;
-		r2 = (a2 + b2) % Z;
-	}
-	printf("%lu%lu\n", r1, r2);
-	return (0);
 }
