@@ -16,7 +16,7 @@ int main(void)
 	unsigned long int x = 0, y = 1, z = 0, a = 2;
 	unsigned long int b, c, k;
 	int count;
-	
+
 	printf("%lu, %lu, ", y, a);
 	for (count = 2; count < 98; count++)
 	{
