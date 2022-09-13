@@ -4,10 +4,9 @@
  * print_times_table  -prints tables
  *
  * @n: print int
- * 
+ *
  * Return: nothing
  */
-
 void print_times_table(int n)
 {
 	int a, b, c; /*Declaring statements*/
@@ -22,7 +21,8 @@ void print_times_table(int n)
 				if ((c / 10) == 0)/*If the first digit is 0*/
 				{
 					if  (b == 0)
-					{ _putchar ('0');
+					{
+					       	_putchar ('0');
 					}
 					if (b != 0)/*print if b is different 0*/
 					{
@@ -49,7 +49,8 @@ void print_times_table(int n)
 					_putchar (' ');
 				}
 			} /*End second FOR*/
-		       	_putchar ('\n');
+			_putchar ('\n');
 		} /*End first FOR*/
 	}
 } /*End int main*/
+
