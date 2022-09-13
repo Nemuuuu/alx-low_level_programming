@@ -17,7 +17,7 @@ int main(void)
 	unsigned long int b, c, k;
 	int count;
 	
-	printf("%lu, %lu, ",y, a);
+	printf("%lu, %lu, ", y, a);
 	for (count = 2; count < 98; count++)
 	{
 		if (y + a > LARGEST || z > 0 || x > 0)
