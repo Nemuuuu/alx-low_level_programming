@@ -10,6 +10,7 @@
 void print_times_table(int n)
 {
 	int a, b, c; /*Declaring statements*/
+
 	if (n < 16 && n > -1)
 	{
 		for (a = 0; a <= n; a++)/*First for*/
