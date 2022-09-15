@@ -11,9 +11,9 @@ int main(void)
 	int i;
 
 	i = 1;
-	while (i <= n )
+	while (i <= n)
 	{
-		if (i % 3 == 0 && i % 5== 0) /* multiply of 3 and 5*/
+		if (i % 3 == 0 && i % 5 == 0) /* multiply of 3 and 5*/
 		{
 			printf("FizzBuzz ");
 		}
