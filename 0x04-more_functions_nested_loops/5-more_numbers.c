@@ -12,9 +12,9 @@ void more_numbers(void)
 
 	i = 0; /*coint*/
 	result = 0;
-	while (i< 10) /*Start first while*/
+	while (i < 10) /*Start first while*/
 	{
-		while (result <=14 ) /*Start second while*/
+		while (result <= 14) /*Start second while*/
 		{
 			if (result < 10) /*swap*/
 			{
