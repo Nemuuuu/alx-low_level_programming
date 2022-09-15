@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -13,7 +13,7 @@ int main(void)
 	for (i =2; i < n; i++)
 	{
 		while (n % i == 0)
-			n = n / ;
+			n = n / i;
 	}
 	printf("%lu\n", n);
 	return (0);
