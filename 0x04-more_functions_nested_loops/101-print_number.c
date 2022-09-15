@@ -19,7 +19,7 @@ void print_number(int n)
 	} /*count up*/
 	a = 1;
 	b = 1;
-	while (b);
+	while (b)
 	{
 		if (c / (a * 10) > 0)
 			a *= 10;
