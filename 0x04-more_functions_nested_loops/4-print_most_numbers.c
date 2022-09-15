@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_most_numbers - print numbers
  *
@@ -7,6 +6,7 @@
  */
 void print_most_numbers(void)
 {
+
 	int i; /*Declaring statement*/
 
 	i = 0;
@@ -16,8 +16,8 @@ void print_most_numbers(void)
 		{
 			_putchar(i +'0'); /*print value i*/
 		}
-
 		i++;
 	}
+	
 	_putchar('\n'); /*New line*/
 }
