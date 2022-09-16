@@ -3,6 +3,7 @@
 /**
  * print_number - Functions that prints an integer.
  * @n: int type number
+ *
  * Description: can only use _putchar to print.
  */
 void print_number(int n)
