@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - prints a string 
+ * _puts - prints a strin
  * @str: a pointer to an int that will be updated
  *
  * Retur: void
