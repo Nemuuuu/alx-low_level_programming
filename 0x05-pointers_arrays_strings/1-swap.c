@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * swap - swap between a and b
+ * swap_int - swap between a and b
  * @a: a pointer to an int that will be updated
  * @b: b pointer ot an int that will be updated
  *
