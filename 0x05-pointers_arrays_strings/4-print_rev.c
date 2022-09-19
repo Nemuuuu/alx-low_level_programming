@@ -11,7 +11,7 @@ void print_rev(char *s)
 	int i;
 
 	i = 0;
-	while (s[i] != '\0'); /*count character of string*/
+	while (s[i] != '\0')
 	{
 		i++;
 	}
@@ -19,5 +19,5 @@ void print_rev(char *s)
 	{
 		_putchar(s[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
