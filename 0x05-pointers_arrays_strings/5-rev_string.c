@@ -9,5 +9,5 @@
  */
 void rev_string(char *s)
 {
-	strsep(s);
+	strrev(s);
 }
