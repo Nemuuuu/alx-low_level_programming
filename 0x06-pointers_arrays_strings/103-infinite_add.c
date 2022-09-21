@@ -8,11 +8,12 @@
  * @size_r: int type argument
  *
  * Descriptiom: adds two numbers from string
- * Retrun: sum of two integers
+ * Return: sum of two integers
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int count, count2;
+
 	while (n1[count] != '\0')
 		count++;
 	while (n2[count2] != '\0')
