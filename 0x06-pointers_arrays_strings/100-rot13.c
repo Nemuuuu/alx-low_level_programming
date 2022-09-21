@@ -11,6 +11,7 @@ char *rot13(char *str)
 	int count = 0, x;
 	char *letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *rot13 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	
 	while (str[count] != '\0')
 	{
 		x = 0;
