@@ -16,13 +16,13 @@ void print_number(int n)
 	}
 	while (n != 0)
 	{
-		n/= 10;
+		n /= 10;
 		count++;
 	}
 	while (count > 1)
 	{
 		pow *= 10;
-		count --;
+		count--;
 	}
 	while (pow >= 1)
 	{
