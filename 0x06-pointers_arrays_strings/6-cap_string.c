@@ -24,7 +24,7 @@ int separator(char c)
 		case '{':
 		case '}':
 			return (1);
-		default: 
+		default:
 			return (0);
 	}
 }
@@ -38,7 +38,7 @@ char *cap_string(char *s)
 {
 	int count, upper;
 
-	upper =-32;
+	upper = - 32;
 	count = 0;
 	while (s[count] != '\0')
 	{
@@ -52,6 +52,5 @@ char *cap_string(char *s)
 					count++;
 					}
 					return (s);
-					}
-					
+					}		
 
