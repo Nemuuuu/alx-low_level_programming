@@ -7,7 +7,7 @@
  *
  * Return: return 1 to 0
  */
-int evaluate_numb(int num, int iterator)
+int evaluate_num(int num, int iterator)
 {
 	if (iterator == num - 1)
 	{
@@ -19,7 +19,7 @@ int evaluate_numb(int num, int iterator)
 	}
 	if (num % iterator != 0)
 	{
-		return (evaluate_num(num, iterator +));
+		return (evaluate_num(num, iterator + 1));
 	}
 	return (0);
 }
