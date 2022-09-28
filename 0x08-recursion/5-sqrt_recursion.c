@@ -16,7 +16,7 @@ int _evaluate(int i, int n)
 	}
 	else if (i * i < n)
 	{
-		return (_evaluate(i +1, n));
+		return (_evaluate(i + 1, n));
 	}
 	else if (i * i == n)
 	{
@@ -27,7 +27,7 @@ int _evaluate(int i, int n)
 
 /**
  * _sqrt_recursion - returns the natural square root of a number
- * @n: integer 
+ * @n: integer
  *
  * Return: square root of a number
  */
