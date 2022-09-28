@@ -1,5 +1,8 @@
 #include "main.h"
 
+int evaluate(char *s, int i, int size, int add);
+int _strlen_recursion(char *s);
+
 /**
  * is_palindrome - sss
  * @r: string
@@ -14,7 +17,7 @@ int is_palindrome(char *r)
 	add = 0;
 	size = _strlen_recursion(r);
 	add = (size % 2 != 0) ? 2 : 1;
-	return (evaluate(r, i, size -1, add));
+	return (evaluate(r, i, size - 1, add));
 }
 
 /**
