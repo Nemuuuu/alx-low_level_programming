@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	tot = atoi(argv[1]);
-	if (total <= 0)
+	if (tot <= 0)
 	{
 		printf("0\n");
 		return (0);
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 			change += aux;
 			tot -= coins[pos] * aux;
 		}
-		position++;
+		pos++;
 	}
 	printf("%d\n", change);
 	return (0);
