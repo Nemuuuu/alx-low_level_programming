@@ -1,4 +1,8 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
+
+int _strlen(char *s);
 
 /**
  * str_concat - concatinates two strings
