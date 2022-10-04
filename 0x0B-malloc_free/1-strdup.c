@@ -1,4 +1,9 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
+
+int _strlen(char *s);
+char *_strcpy(char *dest, char *src);
 
 /**
  * _strdup - returns a ptr to a newly allocated space in memory
@@ -17,7 +22,7 @@ char *_strdup(char *str)
 	}
 	size = _strlen(str) + 1;
 
-	ptr = (cahr *)malloc(size * sizeof(char));
+	ptr = (char *)malloc(size * sizeof(char));
 	if (ptr == 0)
 	{
 		return (NULL);
