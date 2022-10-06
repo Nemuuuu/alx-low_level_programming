@@ -1,9 +1,11 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 /**
  * _strlen - count length of an array
  * @s: array elements
- * 
+ *
  * Return: i
  */
 int _strlen(char *s)
@@ -56,7 +58,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			*(dest + i) = *(s1 + i);
 		}
-		for (j = 0; j < count; j++);
+		for (j = 0; j < count; j++)
 		{
 			*(dest + i) = *(s2 + j);
 			i++;
