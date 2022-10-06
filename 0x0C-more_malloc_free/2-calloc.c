@@ -4,6 +4,8 @@
  * _calloc - allocates memory for an array using malloc
  * @nmemb: number of elemets in an array
  * @size: bytes for each position in the array
+ *
+ * Return: p
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
