@@ -5,6 +5,8 @@
 /**
  * malloc_checked - allocates memory using malloc
  * @b: positive integer
+ *
+ * Return: p
  */
 void *malloc_checked(unsigned int b)
 {
