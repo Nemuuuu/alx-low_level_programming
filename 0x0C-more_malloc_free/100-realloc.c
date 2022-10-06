@@ -5,6 +5,8 @@
  * @ptr: pointer with allocated size
  * @old_size: current allocated size
  * @new_size: new size to reallocate
+ *
+ * Return: ptr
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
