@@ -9,7 +9,7 @@
  * @age: age of dog
  *@owner: owner of dog
  *
- * This structure defines 3 members name as char type,
+ * Description: This structure defines 3 members name as char type,
  * age as float type and owner as char type
  */
 struct dog
@@ -20,6 +20,10 @@ struct dog
 };
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
+
+/**
+ * dog_t - typedef for dog
+ */
 typedef struct
 {
 	char *name;
