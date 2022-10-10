@@ -9,8 +9,7 @@
  * @age: age of dog
  *@owner: owner of dog
  *
- * Description: This structure defines 3 members name as char type,
- * age as float type and owner as char type
+ * Description: This structure defines 3 members
  */
 struct dog
 {
