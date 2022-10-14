@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * printf_strings - prints strings
+ * print_strings - prints strings
  * @separator: string to be printed between the strings
  * @n: fixed parameter
  */
