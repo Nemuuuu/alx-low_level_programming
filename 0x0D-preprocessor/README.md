@@ -11,4 +11,4 @@ The tasks are as follows:
 3. Write a function-like macro ABS(x) that computes the absolute value of a number x.
 5. Write a function-like macro SUM(x, y) that computes the sum of the numbers x and y.
 
-Hint: to define variable as macro use #define <name>
+hint: to define variable as macro use #define <name>
