@@ -1,25 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - entry point
+ *
+ * Return: always 0
  */
 int main(void)
 {
-	char lower_case; /*Decarling statement*/
-	char upper_case;
-	/* for lower case*/
+	int i = 97;
+	int j = 65;
 
-	for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
+	while (i <= 122)
 	{
-		putchar(lower_case);
+		putchar(i);
+		i++;
 	}
-	/*for upper case*/
-	for (upper_case = 'A'; upper_case <= 'Z'; upper_case++)
+	while (j <= 90)
 	{
-		putchar(upper_case);
+		putchar(j);
+		j++;
 	}
-	/*new line*/
-	putchar ('\n');
+	putchar('\n');
 	return (0);
 }
