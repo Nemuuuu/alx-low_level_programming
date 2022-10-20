@@ -4,7 +4,7 @@
 
 /**
  * main - entry point
- * 
+ *
  * Return: always 0
  */
 int main(void)
@@ -25,7 +25,7 @@ int main(void)
 	}
 	else if (lastdigit < 6 && lastdigit != 0)
 	{
-		printf("and is less than 6 and not zero\n");
+		printf("and is less than 6 and not 0\n");
 	}
 	return (0);
 }
