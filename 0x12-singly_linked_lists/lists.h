@@ -2,7 +2,7 @@
 #define _SINGLY_LINKED_LISTS
 
 #include <stdio.h>
-#include <stdlin.h>
+#include <stdlib.h>
 #include <string.h>
 #include <malloc.h>
 
