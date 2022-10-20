@@ -1,21 +1,24 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - entry point
+ *
+ * Retrun: always 0
  */
 int main(void)
 {
-	char letter; /*Decarling statement*/
-	/*for letter*/
+	int i = 97;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	while (i <= 122)
 	{
-		if (letter == 'q') /*continue if is q*/
+		if (i == 114 || i == 102)
+		{
 			continue;
-		else if (letter == 'e')/*continue if is q*/
-			continue;
-		putchar(letter);/*print letter*/
+		}
+		putchar(i);
+		i++;
 	}
-	putchar('\n'); /*new line*/
+	putchar('\n');
 	return (0);
 }
+
