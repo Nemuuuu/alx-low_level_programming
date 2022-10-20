@@ -1,17 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - entry point
+ *
+ * Return: always 0
  */
 int main(void)
 {
-	int i; /*Decarling statement*/
-	/*for count 0-9 with format ASCII*/
+	int i = 48;
 
-	for (i = 48 ; i <= 57; i++)
+	while (i <= 57)
 	{
-		putchar (i); /*print i*/
+		putchar(i);
+		i++;
 	}
-	putchar ('\n'); /*new line*/
+	putchar('\n');
 	return (0);
 }
