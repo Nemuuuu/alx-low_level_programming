@@ -1,24 +1,27 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - entry point
+ *
+ * Return: always 0
  */
 int main(void)
 {
-	int number; /*Decarling statement*/
-	/*for 0-9 with (,)*/
+	int i = 48;
 
-	for (number = 48; number <= 57; number++)
+	while (i <= 57)
 	{
-		putchar(number); /*print  number*/
-		/*if the value is 9 in format ASCII break the program*/
-		if (number == 57)
+		if (i == 57)
 		{
+			putchar(i);
 			break;
 		}
-		putchar(','); /*print (,)*/
-		putchar (' '); /*print a space*/
+		putchar(i);
+		putchar(',');
+		putchar(' ');
+		i++;
 	}
 	putchar('\n');
 	return (0);
 }
+
