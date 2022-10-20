@@ -1,17 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - entry point
+ *
+ * Return: always 0
  */
 int main(void)
 {
-	char letter; /*Decarling statement*/
+	int i;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	i = 97;
+	while (i <= 122)
 	{
-		putchar(letter);
+		putchar(i);
+		i++;
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
