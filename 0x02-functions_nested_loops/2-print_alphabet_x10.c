@@ -1,23 +1,19 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print alphabet
- *
- * Return: always 0
+ * print_alphabet - prints alphabet in lower case
  */
-void print_alphabet_x10(void)
+void print_alphabet(void)
 {
-	int alphabet; /*Declaring statements*/
-	int count;
+	int i = 97;
+	int j;
 
-	count = 0;
-	while (count < 10) /*Start while */
+	for (j = 0; j < 10; j++)
 	{
-		for (alphabet = 'a' ; alphabet <= 'z'; alphabet++) /*start for*/
-		{
-			_putchar(alphabet);
-		} /*end for*/
-		count++;
-		_putchar('\n'); /*new line*/
-	} /*end while*/
+		while (i <= 122)
+	{
+		_putchar(i);
+		i++;
+	}
+	_putchar('\n');
 }
