@@ -1,19 +1,19 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return: nothing, return void
+ * Return: always 0
  */
 int main(void)
 {
-	int i; /*Declaring statements*/
-	char string[9] = "_putchar"; /*Arrays*/
+	char a[] = "_putchar";
+	int i = 0;
 
-	for (i = 0 ; i < 8 ; i++) /*Start for*/
+	while (a[i] != '\0')
 	{
-		_putchar(string[i]);/*display word*/
-	} /*End for*/
-	_putchar('\n');
+		_putchar(a[i]);
+		i++;
+	}
 	return (0);
 }
