@@ -1,18 +1,16 @@
 #include "main.h"
 
 /**
- * print_alphabet - print alphabert lowercase
- *
- * Return: nothing
+ * print_alphabet - prints alphabet in lower case
  */
 void print_alphabet(void)
 {
-	char letter; /*Decarling statement*/
+	int i = 97;
 
-	/*for letter*/
-	for (letter = 'a'; letter <= 'z'; letter++)
+	while (i <= 122)
 	{
-		_putchar(letter);/*print letter*/
+		_putchar(i);
+		i++;
 	}
-	_putchar('\n'); /*new line*/
+	_putchar('\n');
 }
