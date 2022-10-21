@@ -1,23 +1,26 @@
 #include "main.h"
+
 /**
- * _abs - valor absolute
+ * _abs - computes the absolute value of an integer
+ * @n: number to be compute
  *
- * @n: The int to print
- *
- * Return: Returns valor absolute
+ * Return:absolute value of a number
  */
 int _abs(int n)
 {
-	if (n < 0) /*if n is greater than zero*/
+	if (n > 0)
 	{
-		return (n * (-1));
+		n = n;
+		return (1);
 	}
-	else if (n == 0) /*if n is equal 0*/
+	else if (n < 0)
 	{
-		return (0);
+		n = -n;
+		return (-1);
 	}
 	else
 	{
-		return (n); /*if n is positive*/
+		n = 0;
+		return (0);
 	}
 }
