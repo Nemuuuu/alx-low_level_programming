@@ -1,49 +1,24 @@
 #include "main.h"
 
 /**
- * times_table -prints tables
- *
- * Return: nothing
+ * times_table - prints 9 times table starting with 0
  */
 void times_table(void)
 {
-	int a; /*Declaring statements*/
-	int b;
-	int c;
+	int i;
 
-	for (a = 0; a <= 9; a++)/*First for*/
+	for (i = 0; i <= 8; i++)
 	{
-		for (b = 0; b <= 9; b++) /*Secondo for*/
+		for (j = i; j <= 9; j++)
 		{
-			c = a * b; /* multiplication a*b*/
-			if ((c / 10) == 0) /*If the first digit is 0*/
-			{
-				if (b == 0)
-				{
-					_putchar ('0');
-				}
-				if (b != 0)
-				{
-					_putchar (' ');
-					_putchar ((c % 10) + '0');
-				}
-				if (b < 9) /*don't print the last (;)*/
-				{
-					_putchar(',');
-					_putchar (' ');
-				} /*End second IF*/
-			} /*End the first IF*/
-			else
-			{
-				_putchar ((c / 10) + '0');
-				_putchar ((c % 10) + '0');
-				if (b < 9) /*don't print the last (;)*/
-				{
-					_putchar(',');
-					_putchar (' ');
-				}
-			} /*End ELSE*/
-		} /*End second FOR*/
-		_putchar ('\n');
-	} /*End first FOR*/
+			_putchar(i);
+			_putchar(',');
+		}
+		for (k = 0; k <=9; k++)
+		{
+			_putchar('\n');
+			_putchar(j);
+		}
+	}
 }
+
