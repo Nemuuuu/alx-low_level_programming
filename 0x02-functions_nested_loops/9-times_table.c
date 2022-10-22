@@ -18,15 +18,20 @@ void times_table(void)
 				time2 = (i * j) % 10;
 				_putchar(time1 + '0');
 				_putchar(time2 + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
 			else
-				_putchar((i * j) + '0');
-			if (j == 9)
 			{
-				break;
+				_putchar((i * j) + '0');
+				if (j == 9)
+				{
+					break;
+				}
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
-			_putchar(',');
-			_putchar(' ');
 		}
 		_putchar('\n');
 	}
