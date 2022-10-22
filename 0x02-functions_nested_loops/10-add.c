@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * add -prints add two numbers
+ * add - adds two numbers
+ * @a: number1
+ * @b: number2
  *
- * @i: print int i
- *
- * @k: print int k
- *
- * Return: return int
+ * Return: result
  */
-int add(int i, int k)
+int add(int a, int b)
 {
-	return (i + k);
+	int result;
+
+	result = a + b;
+	return (result);
 }
