@@ -1,58 +1,49 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 #include <ctype.h>
-#include <string.h>
+#include <stdlib.h>
 
 /**
- * check_num - check the string digit
- * @str: array string
- *
- * Return: always 0
- */
-int check_num(char *str)
-{
-	unsigned int count;
-
-	count = 0;
-	while (count < strlen(str))
-	{
-		if (!isdigit(str[count]))
-		{
-			return (0);
-		}
-		count++;
-	}
-	return (1);
-}
-
-/**
- * main - addes two positive numbers
- * @argc: count argument
- * @argv: arguments
+ * main - adds positive numbers
+ * @argc: ARGument Count
+ * @argv: ARGument list
  *
  * Return: always 0
  */
 int main(int argc, char *argv[])
 {
-	int count;
-	int str_to_int;
-	int sum = 0;
-
-	count = 1;
-	while (count < argc)
+	int add = 0;
+	int x, count;
+	if (argc == 1)
 	{
-		if (check_num(argv[count]))
-		{
-			str_to_int = atoi(argv[count]);
-			sum += str_to_int;
-		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-		count++;
+		printf("0\n");
 	}
-	printf("%d\n", sum);
+	else
+	{
+		for (count = 1; count < argc; count++)
+		{
+			x = atoi(argv[count]);
+			_isdigit(x);
+			if (x > 0)
+			{
+				add += x;
+			}
+		}
+		printf ("%d\n", add);
+	}
+	return (0);
+}
+
+/**
+ * _isdigit - check if x is digit or not
+ * @x: parameter to be checked
+ * Return: 1
+ */
+int  _isdigit(int x)
+{
+	if (!isdigit(x))
+	{
+		printf("Error\n");
+		return (1);
+	}
 	return (0);
 }
