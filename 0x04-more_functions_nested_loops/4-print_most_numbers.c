@@ -16,8 +16,3 @@ void print_most_numbers(void)
         i++;
     }
 }
-int main(void)
-{
-    print_most_numbers();
-    return (0);
-}
