@@ -1,21 +1,23 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * print_most_numbers - print numbers
- */
+ * print_most_numbers - prints the numbers from 0 to 0
+*/
 void print_most_numbers(void)
 {
+    int i = 48;
 
-
-	int i; /*Declaring statement*/
-
-	i = 0;
-	while (i < 10) /*Start While*/
-	{
-		if (i != 2 && i != 4) /*No print 2 and 4*/
-		{
-			_putchar(i + '0'); /*print value i*/
-		}
-		i++;
-	}
-	_putchar('\n'); /*New line*/
+    while (i <= 57)
+    {
+        if (i == 50 || i == 52)
+        continue;
+        putchar(i);
+        i++;
+    }
+}
+int main(void)
+{
+    print_most_numbers();
+    return (0);
 }
