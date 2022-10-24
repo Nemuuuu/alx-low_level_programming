@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the numbers from 1 to 100
+ * main - entry point and  prints the numbers from 1 to 100
  * for multiples of 3 'Fizz' instead of the number
  * for multiples of 5 'Buzz' instead of the number
  * for the numbers multiples of both 3 and 5 print FizzBuzz
