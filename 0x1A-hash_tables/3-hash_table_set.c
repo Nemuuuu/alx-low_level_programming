@@ -11,25 +11,42 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-    hash_node_t *item = createItem(key, value);
-    int index = key_index(key, ht->size);
-    hash_node_t *cur_val = ht->array[index];
+    unsigned long int index;
+	hash_node_t *new_node, *ptr;
+	char *new_value;
 
-    if (cur_val == NULL)
-    {
-        ht->array[index] = cur_val;    
-    }
-    else
-    {
-        if (strcmp(cur_val->key, key) == 0)
-        {
-            strcpy(ht->array[index]->value, value);
-            return 0;
-        }
-        else
-        {
-            //handleCollision(ht, index, cur_val);
-            return 0;
-        }
-    }
+	if (ht == NULL || key == NULL || *key == 0 || value == NULL)
+		return (0);
+	/* Gives you the index of a key*/
+	index = key_index((const unsigned char *) key, ht->size);
+	ptr = ht->array[index];
+	while (ptr != NULL)
+	{
+		if (strcmp(ptr->key, key) == 0) /*Compare values*/
+			break;
+		ptr = ptr->next;
+	}
+	if (ptr == NULL)
+	{
+		new_node = malloc(sizeof(hash_node_t));
+		if (new_node == NULL) /*Handle errors*/
+			return (0);
+		new_node->key = strdup(key); /*Copy key*/
+		if (new_node->key == NULL)
+			return (0);
+		new_node->value = strdup(value); /*Copy value*/
+		if (new_node->value == NULL)
+			return (0);
+		new_node->next = ht->array[index];
+		ht->array[index] = new_node;
+	}
+	else
+	{
+		new_value = strdup(value); /*Copy value*/
+		if (new_value == NULL)
+			return (0);
+		free(ptr->value);
+		ptr->value = new_value;
+	}
+	return (1);
 }
